@@ -1,0 +1,303 @@
+
+    /* Media screen = impostare lo schero per telefoni , tablets*/
+@media screen and (min-width: 800px) {
+    #grigliaSchede{
+        grid-template-columns: auto auto auto;   
+    }
+}
+    
+  @media screen and (max-width: 800px) {
+    #grigliaSchede{
+        grid-template-columns: auto; 
+    }
+    .scheda{
+        margin-bottom: 5% ;
+    } 
+}
+    /* font per le scritture*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /*  style del body  */
+.container {
+    background-color: rgb(187, 187, 187);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+    /* Style barra sinistra*/
+.barraSinistra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+}
+    /* style div per l'immagine del logo*/
+.logo{
+    background-position: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17%;
+    width: 20%;
+}
+
+.immagine{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: white;
+    top: 5%;
+    border-radius: 50%;        
+    padding: 2%;
+    left: 5%;
+    max-width: min-content;
+    height: 82%;   
+}
+    /* sfondo */
+.immagine2{ 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+}
+
+    /* Style dove metteremo le varie schede */
+#main{
+    overflow: auto;
+    position: absolute;
+    right: 1%;
+    top: 18%;
+    height: 76%;
+    width: 78%;
+    border-radius: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+
+}
+    /* Style singole schede */
+.scheda{
+    position: relative;
+    height: 20em;
+    padding: 2%;
+    left: 0;
+    top: 0;
+    margin: 5%;
+    width: 88%;
+    background-color: white;
+    float: left;
+    margin-bottom: 15%;
+    box-shadow: 5px 5px 5px grey;
+}
+
+#grigliaSchede{
+    display: grid;
+}
+
+.titoloScheda{
+    text-align: center;
+    width: 100%;
+    height: 3em;
+    font-size: large;
+    font-weight: bold;
+}
+.tabellaScheda{
+    padding: 1%;
+    grid-template-columns: auto auto;
+    display: grid;
+}
+
+.tabellaDettaglio{
+    padding: 1%;
+    grid-template-columns: auto auto auto auto auto auto;
+    display: grid;
+}
+
+.bottoneScheda{
+    width: 100%;
+    height: 2.7em;
+    text-align: center;
+    background-color:  rgb(126, 126, 255);;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px 5px;
+}
+
+.dettaglioScheda{
+    padding-left: 4%;
+    padding-bottom: 20%;
+}
+
+.dettaglioScheda2 {
+    position: absolute;
+    bottom: 20px;
+    width: 95%;
+}
+    /* Style della barra di navigazione dove ci sono i bottoni */
+.navBar{
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 15%;
+    width: 72.9%;
+}
+
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: 16px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(126, 126, 255);; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: lightblue; 
+  }
+
+    /* style per i bottoni nella navbar*/
+.a:hover:not(.active) {
+    background-color: lightblue;
+}
+  
+.active{
+    background-color: rgb(126, 126, 255);
+    text-align: center;
+    bottom: 0;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    padding: 1%;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    box-shadow: 5px 5px 5px #000000ab;
+    border-radius: 5px 5px;
+}
+
+    /* Style informazioni barra di sinistra */
+.infos{
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    height: 76%;
+    width: 94%;
+    border-radius: 10px 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.a{
+    cursor: pointer;
+    background-color: rgb(11, 20, 20);
+    text-align: center;
+    bottom: 0;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    padding: 1%;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 5px #000000ab;
+}
+
+.bottoninav{
+    bottom: 14%;
+    left: -9%;
+    width: 100%;
+    position: absolute;
+}    
+    /* Style per le informazioni barra sinistra */
+.p{
+    padding-left: 3%;
+    color: black;
+    border-bottom: 1px #cec8c8 solid;
+    border-bottom-right-radius: 50px;
+}
+.pa{
+    font-size: 112%;
+    padding-left: 15%;
+    color: black;
+    border-bottom: 1px #cec1c1 solid;
+    font-weight: bold;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+                                
+    /* Style del dettaglio della scheda */
+.informazioni{
+    height: 94%;
+    position: absolute;
+    width: 99%;
+    margin-left: 8px;
+    padding: 1%;
+    background: white;
+    display: none;
+}
+.dettinfo{
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    width: 100%;
+    height: 80%;
+    padding-left: 10px;
+}
+.indietro{
+    height: 19%;
+    width: 5%;
+    margin: 0%;
+    background: white;
+}
+.prova {
+    margin: 0.3%;
+    bottom: 0;
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+    padding: 1%;
+    text-decoration: none;
+    display: inline-block
+}
+
+    /* Style del footer */
+.footer-container {
+    background-color: #212329;
+    padding: 0.001rem 0 0.001rem 0;
+    top: 98%;
+    position: absolute;
+    width: inherit;
+}  
+
+.footer {
+    width: 80%;
+    height: 32vh;
+    background-color: #212329;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+  
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2 {
+    margin-bottom: 1rem;
+}
+
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+    color: rgb(126, 126, 255);
+    transition: 0.3s ease-out;
+}
